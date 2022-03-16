@@ -1,0 +1,90 @@
+nav li{
+    padding: 8px;
+    display: inline-block;
+    margin: 10px;
+    font-family: 'Space Mono', monospace;
+    border: 2px solid rgb(48, 33, 33);
+}
+
+nav{
+    padding-left: 500px;
+}
+
+li a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+li a { 
+    text-decoration: none;  
+}
+
+.active{
+    background-color: rgb(183, 192, 219);
+    text-transform: uppercase;
+    text-decoration: black wavy underline;
+    text-shadow: 2px 0px 0px white;
+}
+
+.skip{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Space Mono', monospace;
+    margin: 20px;
+    text-align: center;
+}
+
+p {
+    line-height: 25px;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer{
+    background-color: rgb(176, 179, 223);
+    padding: 10px;
+}
+
+footer p {
+    margin: 5px;
+    text-align: center;
+}
+
+img{
+    margin: 30px;
+    width: 150px;
+    border: 3px dashed rgb(48, 33, 33);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+img:hover:nth-child(2n) {
+    border: 3px dashed rgb(140, 144, 207);
+    opacity: 0.2;
+}
+
+.destinations{
+    display: grid;
+    grid-template-columns: 1;
+    align-content: center;
+}
+
+.foods{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foods img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
