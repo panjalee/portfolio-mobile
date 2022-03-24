@@ -17,6 +17,10 @@ nav li{
     background-color: white;
 }
 
+nav a{
+    color: black;
+  }
+  
 li a:visited{
     text-decoration: none;
     color: black;
@@ -40,6 +44,8 @@ a.skip{
     font-family: 'Roboto', sans-serif;
     position: absolute;
     left: -500px;
+    color: black;
+    text-decoration: none;
 }
 
 a.skip:focus {
