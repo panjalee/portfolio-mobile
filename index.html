@@ -22,10 +22,10 @@
 <script src="https://kit.fontawesome.com/172fe4008b.js" crossorigin="anonymous"></script>
 <script type="text/javascript">
 function displayInformation () {
-    const weekday = [" Sunday"," Monday"," Tuesday"," Wednesday"," Thursday"," Friday"," Saturday"];
-    const d = new Date();
-    let day = weekday[d.getDay()];
-    document.getElementById("day").innerHTML = " " + day;
+    var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var d = new Date();
+    var day = weekday[d.getDay()];
+    document.getElementById("dayofWeek").innerHTML = day;
 }
     </script>
 </head>
@@ -34,17 +34,17 @@ function displayInformation () {
     <a class = "skip" href="#main">Skip to Main Content</a>
     <header>
         <nav>
-          <ul>
+          <ul class="nav_links">
             <li class="active"><a href = "index.html">About Me</a></li>
               <li><a href = "work.html">Work</a></li>
               <li><a href = "photography.html">Photography</a></li>
               <li><a href = "lifestyle.html">Lifestyle</a></li>
           </ul>
       </nav>
-      <p class = "welcome">
-        Welcome, hope you are having a great <span id = "day"> </span>!<br/>
-    </p> 
-      </header> 
+      <span>
+        Welcome, hope you are having a great <span id="dayofWeek"></span>!
+    </span>
+      </header>
     <main>
         <h1 id="main">About Me</h1>
     <p> Hi, I'm Anjalee!! I grew up in Northville, MI and our downtown is filled with Victorian-era architecture and small coffee shops. 
@@ -74,7 +74,7 @@ function displayInformation () {
     action="https://formspree.io/f/mzbovvkd"
     method="POST">
     <label>
-        Full Name:
+        Name:
         <input type="text" name="name">
     </label>
     <label>
@@ -87,8 +87,8 @@ function displayInformation () {
         <input type="email" name="email">
     </label>
     <br>
-    <div class = "question">
-        Are you okay with me contacting you back?
+        <span class = "question">Are you okay with me contacting you back?</span>
+    <div class = "options">
         <input type="radio" name="contact permission" id="yes" value="yes"> 
         <label for="yes">Yes</label>
         <input type="radio" name="contact permission" id="no" value="no">
@@ -96,7 +96,7 @@ function displayInformation () {
     </div>
     <label>
         <br>
-        Message:
+        Message:<br>
         <textarea name="message"></textarea>
     </label>
     
@@ -109,7 +109,7 @@ function displayInformation () {
     <a aria-label="mail icon" href = "mailto:panjalee@umich.edu"> <i class="fa-solid fa-envelope"></i></a>
     <a aria-label="heart icon" href = https://vsco.co/anjaleepatel > <i class="fa-solid fa-heart"></i></a>
     <a aria-label="linkedin icon" href = https://www.linkedin.com/in/anjalee-patel-michigan> <i class="fa-brands fa-linkedin"></i></a></p>
-    <p>Created by Anjalee Patel (Feb 2022)
+    <p>Created with love by Anjalee Patel (March 2022)
     </p> 
 </footer>
 </body>

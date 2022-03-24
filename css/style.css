@@ -3,20 +3,27 @@ header{
     justify-items: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 nav li{
     padding: 8px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     margin: 10px;
     font-family: 'Space Mono', monospace;
     border: 2px solid rgb(48, 33, 33);
+    background-color: white;
 }
+
 
 
 li a:visited{
     text-decoration: none;
     color: black;
+    display: flex;
+    justify-content: center;
 }
 
 li a { 
@@ -100,6 +107,7 @@ img:hover:nth-child(2n) {
 .headshot, .logos{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     animation-name: spin;
     animation-duration: 3s;
 }
@@ -109,7 +117,7 @@ img:hover:nth-child(2n) {
     100% {transform: rotate(720deg); opacity:1;}
 }
 
-input[type=name], input[type=number], input[type=email]{
+input[type=text], input[type=number], input[type=email]{
     width: 60%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -122,6 +130,7 @@ button[type=submit]{
     width: 70px;
     padding: 8px;
     font-family: 'Space Mono', monospace;
+    border-radius: 20px;
 }
 
 label{
@@ -144,13 +153,22 @@ form{
 {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .question{
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     font-family: 'Space Mono', monospace;
+    padding: 2px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.options{
+    margin: 10px;
 }
 
 .icons a{
@@ -159,21 +177,32 @@ form{
     color:rgb(0, 0, 0)
 } 
 
-.welcome{
-    display: flex;
-    justify-items: flex-start;
+.photosText, .lifestyleText{
+    background-color: whitesmoke;
+}
+
+header > span {
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
     background-color: rgb(189, 192, 236);
-    padding: 4px;
+    padding: 2px;
+    margin-top: 10px;
+    animation-name: fade;
+    animation-duration: 2s;
 }
 
-.photosText, .lifestyleText{
-    background-color: rgb(252, 248, 248);
+@keyframes fade{
+    0% {opacity:0;}
+    50% {opacity: 0.5;}
+    100% {opacity:1;}
 }
-
 @media screen and (prefers-reduced-motion: reduce){
 
     .headshot, .logos{
+        animation-duration: 0s;
+    }
+
+    header > span {
         animation-duration: 0s;
     }
 
