@@ -142,6 +142,14 @@ form{
     align-items: center;
     flex-direction: column;
 }
+
+.question{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Space Mono', monospace;
+}
+
 .icons a{
     border: none;
     background-color: none;
