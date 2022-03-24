@@ -15,6 +15,13 @@ nav li{
 
 nav{
     padding-left: 500px;
+    animation-name: spin;
+    animation-duration: 2s;
+}
+
+@keyframes spin {
+    0%   {transform: rotate(0deg);}	
+    100%  {transform: rotate(600deg);}
 }
 
 li a:visited{
@@ -27,17 +34,26 @@ li a {
 }
 
 .active{
-    background-color: rgb(183, 192, 219);
+    background-color: rgb(176, 179, 223);
     text-transform: uppercase;
     text-decoration: black wavy underline;
-    text-shadow: 2px 0px 0px white;
+    text-shadow: 2px 0px 0px rgb(228, 222, 222);
 }
 
-.skip{
-    position: relative;
-    top: 20px;
-    left: 20px;
+a.skip{
     font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: -500px;
+}
+
+a.skip:focus {
+    top: 20px;
+    left: 0px;
+  } 
+
+#bodyLifestyle, #bodyPhotography{
+    background-image: url('../images/lines.jpeg');
+    background-size: auto;
 }
 
 h1{
@@ -91,4 +107,59 @@ img:hover:nth-child(2n) {
     justify-content: center;
 }
 
+.headshot, .logos{
+    animation-name: animation;
+    animation-duration: 3s;
+}
 
+@keyframes animation{
+    0% {left: 20px; opacity:0;}
+    100% {margin-left: auto; margin-right: auto; width: 50%; opacity:1;}
+}
+
+input[type=name], input[type=number], input[type=email],  input[type=submit] {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(140, 144, 207);
+  }
+
+label{
+    display: flex;
+    justify-content: center;
+    font-family: 'Space Mono', monospace;
+}
+
+textarea{
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+    margin: 8px 0;
+    height: 50px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.icons button{
+    border: none;
+    background: none;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+
+    .headshot, .logos{
+        animation-duration: 0s;
+    }
+
+    nav{
+        animation-duration: 0s;
+    }
+
+}

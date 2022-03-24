@@ -19,11 +19,13 @@
 
   gtag('config', 'G-TGX4ET5R8Q');
 </script>
+<script src="https://kit.fontawesome.com/172fe4008b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <a class = "skip" href="#main">Skip to Main Content</a>
     <header>
-        <nav>
+        <nav class="loading" role='navigation'>
           <ul>
             <li class="active"><a href = "index.html">About Me</a></li>
               <li><a href = "work.html">Work</a></li>
@@ -51,11 +53,11 @@
         This site is meant to be a creative outlet where I can show you my work and my passions. 
         Please feel free to reach me at 734-890-8743 or panjalee@umich.edu! 
         </p>
-    <div>
+    <div class = "headshot">
     <img src = "images/headshot.jpg" alt = "headshot of myself (anjalee)" width = "200"/>
     </div>
     <h1 id="contact">Contact Me</h1>
-    <p> Have any comments, questions, or anything else you would like to share? You can also contact me through this
+    <p class = form> Have any comments, questions, or anything else you would like to share? You can also contact me through this
         form! </p>
     <form
     action="https://formspree.io/f/mzbovvkd"
@@ -69,15 +71,20 @@
         <input type="number" name="number">
     </label>
     <label>
+        <br>
         Email:
         <input type="email" name="email">
     </label>
+    <label>
+    <br>
         Are you okay with me contacting you back?
         <input type="radio" name="contact permission" id="yes" value="yes"> 
         <label for="yes">Yes</label>
         <input type="radio" name="contact permission" id="no" value="no">
         <label for="no">No</label>
+    </label>
     <label>
+        <br>
         Message:
         <textarea name="message"></textarea>
     </label>
@@ -87,7 +94,12 @@
     <br>
 </main>
 <footer>
-    <p>Created by Anjalee Patel (Feb 2022)</p>
+    <p class = "icons">
+    <button aria-label="mail icon"><i class="fa-solid fa-envelope"></i></button>
+    <button aria-label="heart icon"><i class="fa-solid fa-heart"></i></button>
+    <button aria-label="linkedin icon"><i class="fa-brands fa-linkedin"></i></p></button>
+    <p>Created by Anjalee Patel (Feb 2022)
+    </p>
 </footer>
 </body>
 </html>
