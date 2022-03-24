@@ -87,9 +87,9 @@ img:hover:nth-child(2n) {
 
 .destinations{
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
 }
 
 .foods{
@@ -112,10 +112,8 @@ img:hover:nth-child(2n) {
     100% {transform: rotate(720deg); opacity:1;}
 }
 
-input[type=name], input[type=number], input[type=email],  input[type=submit] {
-    display: flex;
-    justify-content: center;
-    width: 20%;
+input[type=name], input[type=number], input[type=email]{
+    width: 60%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -123,35 +121,40 @@ input[type=name], input[type=number], input[type=email],  input[type=submit] {
     border-bottom: 2px solid rgb(140, 144, 207);
   }
 
+button[type=submit]{
+    width: 70px;
+    padding: 8px;
+    font-family: 'Space Mono', monospace;
+}
+
 label{
-    display: flex;
-    justify-content: center;
     font-family: 'Space Mono', monospace;
 }
 
 textarea{
-    display: flex;
-    justify-content: center;
     padding: 10px 15px;
     margin: 8px 0;
     height: 50px;
 }
 
-.form{
+form{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-.icons button{
+.icons a{
     border: none;
-    background: none;
-}
+    background-color: none;
+    text-decoration: none;
+    color:rgb(0, 0, 0)
+} 
 
 .welcome{
     display: flex;
-    justify-content: flex-start;
+    justify-items: flex-start;
     font-style: italic;
     background-color: rgb(189, 192, 236);
+    padding: 4px;
 }
 
 .photosText, .lifestyleText{
@@ -162,6 +165,15 @@ textarea{
 
     .headshot, .logos{
         animation-duration: 0s;
+    }
+
+    html{
+        scroll-behavior: auto; 
+    }
+
+    a.skip {
+        -webkit-transition: initial; 
+        transition: initial; 
     }
 
 }
