@@ -22,8 +22,8 @@
 <script src="https://kit.fontawesome.com/172fe4008b.js" crossorigin="anonymous"></script>
 <script type="text/javascript">
 function displayInformation () {
-    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    document.getElementById("day").innerHTML = weekday[new Date().getDay()];
+    var weekday = [" Sunday"," Monday"," Tuesday"," Wednesday"," Thursday"," Friday"," Saturday"];
+    document.getElementById("day").innerHTML = " " + weekday[new Date().getDay()];
 }
     </script>
 </head>
@@ -40,7 +40,7 @@ function displayInformation () {
           </ul>
       </nav>
       <p class = "welcome">
-        Welcome, hope you are having a great <span id = "day"></span>!<br/>
+        Welcome, hope you are having a great <span id = "day"> </span>!<br/>
     </p> 
       </header> 
     <main>
