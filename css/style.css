@@ -20,7 +20,7 @@ nav li{
 nav a{
     color: black;
   }
-  
+
 li a:visited{
     text-decoration: none;
     color: black;
@@ -136,6 +136,7 @@ button[type=submit]{
     padding: 8px;
     font-family: 'Space Mono', monospace;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 label{
@@ -169,11 +170,13 @@ form{
     padding: 2px;
     margin-left: 40px;
     margin-right: 40px;
+    margin-top: 20px;
     text-align: center;
 }
 
 .options{
     margin: 10px;
+    margin-bottom: 20px;
 }
 
 .icons a{
