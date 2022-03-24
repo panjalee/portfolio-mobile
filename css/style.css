@@ -143,6 +143,12 @@ form{
     flex-direction: column;
 }
 
+.formIntro
+{
+    display: flex;
+    justify-content: center;
+}
+
 .question{
     display: flex;
     align-items: center;
@@ -152,7 +158,6 @@ form{
 
 .icons a{
     border: none;
-    background-color: none;
     text-decoration: none;
     color:rgb(0, 0, 0)
 } 
