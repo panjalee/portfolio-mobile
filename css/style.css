@@ -13,9 +13,6 @@ nav li{
     border: 2px solid rgb(48, 33, 33);
 }
 
-nav{
-    padding-left: 50%;
-}
 
 li a:visited{
     text-decoration: none;

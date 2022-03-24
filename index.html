@@ -22,8 +22,10 @@
 <script src="https://kit.fontawesome.com/172fe4008b.js" crossorigin="anonymous"></script>
 <script type="text/javascript">
 function displayInformation () {
-    var weekday = [" Sunday"," Monday"," Tuesday"," Wednesday"," Thursday"," Friday"," Saturday"];
-    document.getElementById("day").innerHTML = " " + weekday[new Date().getDay()];
+    const weekday = [" Sunday"," Monday"," Tuesday"," Wednesday"," Thursday"," Friday"," Saturday"];
+    const d = new Date();
+    let day = weekday[d.getDay()];
+    document.getElementById("day").innerHTML = " " + day;
 }
     </script>
 </head>
@@ -73,7 +75,7 @@ function displayInformation () {
     method="POST">
     <label>
         Full Name:
-        <input type="name" name="name">
+        <input type="text" name="name">
     </label>
     <label>
         Number:
@@ -108,7 +110,7 @@ function displayInformation () {
     <a aria-label="heart icon" href = https://vsco.co/anjaleepatel > <i class="fa-solid fa-heart"></i></a>
     <a aria-label="linkedin icon" href = https://www.linkedin.com/in/anjalee-patel-michigan> <i class="fa-brands fa-linkedin"></i></a></p>
     <p>Created by Anjalee Patel (Feb 2022)
-    </p>
+    </p> 
 </footer>
 </body>
 </html>
