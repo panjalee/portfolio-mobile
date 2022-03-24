@@ -15,13 +15,6 @@ nav li{
 
 nav{
     padding-left: 500px;
-    animation-name: spin;
-    animation-duration: 2s;
-}
-
-@keyframes spin {
-    0%   {transform: rotate(0deg);}	
-    100%  {transform: rotate(600deg);}
 }
 
 li a:visited{
@@ -108,13 +101,15 @@ img:hover:nth-child(2n) {
 }
 
 .headshot, .logos{
-    animation-name: animation;
+    display: flex;
+    justify-content: center;
+    animation-name: spin;
     animation-duration: 3s;
 }
 
-@keyframes animation{
-    0% {left: 20px; opacity:0;}
-    100% {margin-left: auto; margin-right: auto; width: 50%; opacity:1;}
+@keyframes spin{
+    0% {transform: rotate(0deg); opacity:0;}
+    100% {transform: rotate(720deg); opacity:1;}
 }
 
 input[type=name], input[type=number], input[type=email],  input[type=submit] {
@@ -152,13 +147,20 @@ textarea{
     background: none;
 }
 
+.welcome{
+    display: flex;
+    justify-content: flex-start;
+    font-style: italic;
+    background-color: rgb(189, 192, 236);
+}
+
+.photosText, .lifestyleText{
+    background-color: rgb(252, 248, 248);
+}
+
 @media screen and (prefers-reduced-motion: reduce){
 
     .headshot, .logos{
-        animation-duration: 0s;
-    }
-
-    nav{
         animation-duration: 0s;
     }
 
